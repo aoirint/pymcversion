@@ -1,5 +1,4 @@
 import requests
-from dataclasses import dataclass
 from typing import List
 from pydantic import BaseModel
 
