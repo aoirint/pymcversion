@@ -9,11 +9,14 @@ pip3 install git+https://github.com/aoirint/pymcversion.git
 ## Command Usage
 
 ```shell
-mcversion bedrock
+$ mcversion bedrock
+1.17.40.06
 
-mcversion java
+$ mcversion java
+1.17.1
 
-mcversion ios
+$ mcversion ios
+1.17.40
 ```
 
 ## Develop
