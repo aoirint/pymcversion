@@ -10,8 +10,11 @@ def command_bedrock_server_linux_version(args):
 def command_bedrock_server_linux_url(args):
     print(get_bedrock_server_latest_version().linux.url)
 
-def command_java_version(args):
+def command_java_release_version(args):
     print(get_java_version_manifest().latest.release)
+
+def command_java_snapshot_version(args):
+    print(get_java_version_manifest().latest.snapshot)
 
 def command_ios_version(args):
     print(get_ios_store_lookup().version)
@@ -30,10 +33,12 @@ def main():
     parser_bedrock_linux_url.set_defaults(handler=command_bedrock_server_linux_url)
 
     parser_java = subparsers.add_parser('java')
-    parser_java.set_defaults(handler=command_java_version)
+    parser_java.set_defaults(handler=command_java_release_version)
     subparsers_java = parser_java.add_subparsers()
-    parser_java_version = subparsers_java.add_parser('version')
-    parser_java_version.set_defaults(handler=command_java_version)
+    parser_java_release_version = subparsers_java.add_parser('release-version')
+    parser_java_release_version.set_defaults(handler=command_java_release_version)
+    parser_java_snapshot_version = subparsers_java.add_parser('snapshot-version')
+    parser_java_snapshot_version.set_defaults(handler=command_java_snapshot_version)
 
     parser_ios = subparsers.add_parser('ios')
     parser_ios.set_defaults(handler=command_ios_version)
