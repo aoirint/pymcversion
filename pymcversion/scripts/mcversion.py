@@ -4,7 +4,7 @@ from pymcversion import (
     get_ios_store_lookup,
 )
 
-def command_bedrock_version(args):
+def command_bedrock_server_version(args):
     print(get_bedrock_server_latest_version().linux.version)
 
 def command_java_version(args):
@@ -18,11 +18,11 @@ def main():
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers()
 
-    parser_bedrock = subparsers.add_parser('bedrock')
-    parser_bedrock.set_defaults(handler=command_bedrock_version)
+    parser_bedrock = subparsers.add_parser('bedrock-server')
+    parser_bedrock.set_defaults(handler=command_bedrock_server_version)
     subparsers_bedrock = parser_bedrock.add_subparsers()
     parser_bedrock_version = subparsers_bedrock.add_parser('version')
-    parser_bedrock_version.set_defaults(handler=command_bedrock_version)
+    parser_bedrock_version.set_defaults(handler=command_bedrock_server_version)
 
     parser_java = subparsers.add_parser('java')
     parser_java.set_defaults(handler=command_java_version)

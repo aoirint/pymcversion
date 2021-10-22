@@ -9,7 +9,7 @@ pip3 install git+https://github.com/aoirint/pymcversion.git
 ## Command Usage
 
 ```shell
-$ mcversion bedrock
+$ mcversion bedrock-server
 1.17.40.06
 
 $ mcversion java
