@@ -1,6 +1,6 @@
-from pymcversion import get_java_version_manifest
+from pymcversion import get_bedrock_server_latest_version
 
-def test_get_java_version_manifest():
-    manifest = get_java_version_manifest()
+def test_get_bedrock_server_latest_version():
+    version = get_bedrock_server_latest_version()
 
-    assert manifest.latest.release != ''
+    assert version != ''
