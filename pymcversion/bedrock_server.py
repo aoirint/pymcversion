@@ -13,6 +13,8 @@ def get_bedrock_server_latest_version() -> str:
 
     # https://minecraft.azureedge.net/bin-linux/bedrock-server-1.17.40.06.zip
     m = re.search(r'"https://minecraft\.azureedge\.net/bin-linux/bedrock-server-(.+?)\.zip"', html)
+    if m is None:
+        raise Exception('No match found. URL or filename changed?')
 
     version = m.group(1)
     return version
