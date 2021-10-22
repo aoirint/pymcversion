@@ -1,5 +1,15 @@
 # pymcversion
 
+## Command Usage
+
+```shell
+mcversion bedrock
+
+mcversion java
+
+mcversion ios
+```
+
 ## Install
 
 ```shell
