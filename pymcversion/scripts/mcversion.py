@@ -10,6 +10,12 @@ def command_bedrock_server_linux_version(args):
 def command_bedrock_server_linux_url(args):
     print(get_bedrock_server_latest_version().linux.url)
 
+def command_bedrock_server_win_version(args):
+    print(get_bedrock_server_latest_version().win.version)
+
+def command_bedrock_server_win_url(args):
+    print(get_bedrock_server_latest_version().win.url)
+
 def command_java_release_version(args):
     print(get_java_version_manifest().latest.release)
 
@@ -31,6 +37,10 @@ def main():
     parser_bedrock_linux_version.set_defaults(handler=command_bedrock_server_linux_version)
     parser_bedrock_linux_url = subparsers_bedrock.add_parser('linux-url')
     parser_bedrock_linux_url.set_defaults(handler=command_bedrock_server_linux_url)
+    parser_bedrock_win_version = subparsers_bedrock.add_parser('win-version')
+    parser_bedrock_win_version.set_defaults(handler=command_bedrock_server_win_version)
+    parser_bedrock_win_url = subparsers_bedrock.add_parser('win-url')
+    parser_bedrock_win_url.set_defaults(handler=command_bedrock_server_win_url)
 
     parser_java = subparsers.add_parser('java')
     parser_java.set_defaults(handler=command_java_release_version)
