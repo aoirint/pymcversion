@@ -9,6 +9,7 @@ from pymcversion import __VERSION__ as VERSION
 install_requires: List[str] = [
     # dependencies like requirements.txt
     'requests', # https://pypi.org/project/requests/
+    'pydantic', # https://pypi.org/project/pydantic/
 ]
 
 python_version = sys.version_info
