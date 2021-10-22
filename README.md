@@ -3,6 +3,12 @@
 ## Install
 
 ```shell
+pip3 install pymcversion
+```
+
+or
+
+```shell
 pip3 install git+https://github.com/aoirint/pymcversion.git
 ```
 
