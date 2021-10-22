@@ -1,4 +1,4 @@
-# minecraft-bedrock-server-version
+# pymcversion
 
 ```shell
 pip3 install -r requirements.txt

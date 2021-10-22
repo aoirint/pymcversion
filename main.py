@@ -2,7 +2,7 @@ import re
 import requests
 
 timeout = 3
-useragent = 'aoirint/minecraft-bedrock-server-version'
+useragent = 'aoirint/pymcversion'
 headers = {
     'User-Agent': useragent,
 }
