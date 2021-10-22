@@ -17,6 +17,5 @@ pip3 install -r requirements.txt
 ```shell
 pip3 install -r requirements-test.txt
 
-pytest ./tests
-mypy ./pymcversion
+make test
 ```
