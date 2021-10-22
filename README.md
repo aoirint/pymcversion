@@ -1,5 +1,11 @@
 # pymcversion
 
+## Install
+
+```shell
+pip3 install git+https://github.com/aoirint/pymcversion.git
+```
+
 ## Command Usage
 
 ```shell
@@ -8,12 +14,6 @@ mcversion bedrock
 mcversion java
 
 mcversion ios
-```
-
-## Install
-
-```shell
-pip3 install git+https://github.com/aoirint/pymcversion.git
 ```
 
 ## Develop
