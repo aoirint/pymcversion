@@ -42,6 +42,7 @@ setup(
 
     classifiers=[
         'Development Status :: 3 - Alpha',
+        'License :: OSI Approved :: The Unlicense (Unlicense)',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
